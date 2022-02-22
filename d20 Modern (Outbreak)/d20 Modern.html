@@ -17,7 +17,7 @@
                     </tr>
                     <tr>
                         <td><input type="number" class=sheet-text" name="attr_DaysAlive" value="0" style="width:100%"></td>
-                        <td><input type="number" class=sheet-text" name="attr_base_xp" value="@{DaysAlive}*100" disabled="true" style="width:40px"></td>
+                        <td><input type="number" class=sheet-text" name="attr_base_xp" value="@{DaysAlive}*100" disabled="true" style="width:100%"></td>
                         <td><input type="number" class="sheet-text" name="attr_bonus_xp" value="0" style="width:100%"></td>
                         <td><input type="number" class="sheet-text" name="attr_total_xp" value="@{base_xp}+@{bonus_xp}" disabled="true" style="width:100%"/></td>
                     </tr>
@@ -28,9 +28,9 @@
                         <th>Total</th>
                     </tr>
                     <tr>
-                        <td><input type="text" class="sheet-text" name="attr_Starting_Occupation" style="width:100px"/></td>
+                        <td><input type="text" class="sheet-text" name="attr_Starting_Occupation" style="width:100%" colspan="2"/></td>
                         <th><input type="number" class="sheet-text" name="attr_Character_Level" value="0" style="width:40px"/></th>
-                        <th colspan="2" style="width:100%">
+                        <th style="width:100%">
                             <div class="sheet-tooltipsdown"><h4>Classes (Hover)</h4>
                                 <span>
                                     <table class="sheet-tableI">
@@ -118,17 +118,7 @@
                     <tr>
                         <td><input type="text" class="sheet-text" name="attr_Age" style="width:100%"/></td>
                         <td><input type="text" class="sheet-text" name="attr_Gender" style="width:100%"/></td>
-                        <td>
-                            <select class="sheet-number" name="attr_Community">
-                                <option value="" selected></option>
-                                <option value="Administrative">Administrative</option>
-                                <option value="Entertainment">Entertainment</option>
-                                <option value="Industrial">Industrial</option>
-                                <option value="Public Service">Public Service</option>
-                                <option value="Scientific">Scientific</option>
-                                <option value="Underworld">Underworld</option>
-                            </select> 
-                        </td>
+                        <td><input type="text" class="sheet-text" name="attr_Community" style="width:100%"/></td>
                     </tr>
                     <tr>
                         <th>Age</th>
