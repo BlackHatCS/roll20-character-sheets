@@ -150,16 +150,19 @@ div.sheet-core-content {
 .sheet-tableII th {
     background:#000;
     color:white;
+    text-align: center;
 }
 .sheet-tableII {
     margin-left:auto;
     margin-right:auto;
     width: 95%; 
+    text-align: center;
 }
 .sheet-tableII th.sheet-heading {
     background:#000;
     color:white;
     font-size:9px;
+    text-align: center;
 }
 
 .sheet-text {
