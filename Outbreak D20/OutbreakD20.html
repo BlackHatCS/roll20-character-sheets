@@ -9,7 +9,7 @@
 <div style="margin-top:-20px; width: 100%;">
         <table style="width:100%;">
             <tr>
-                <td style="width:50%;"></td>
+                <td class="empty-cell" style="width:50%;"></td>
                 <td>
                     <span class="corner-label">1. Filing Date</span>
                     <input type="text" name="attr_filing_date" value="">
@@ -25,7 +25,7 @@
             </tr>
         </table>
 <!-- Row 2 -->
-        <table>
+        <table style="width:100%;">
             <tr>
                 <td style="width:20%;">
                     <span class="corner-label">4. Victim Name</span>
@@ -66,9 +66,113 @@
             </tr>
         </table>
 <!-- Row 3 -->
-        <table>
+        <table style="width:100%;">
             <tr>
+                <!-- Character Classes -->
+                <td style="width:17%";> 
+                    <div class="sheet-tooltipsdown"><h4>13. Archetype(s):</h4>
+                        <span>
+                            <table class="sheet-tableI">
+                                <tr>
+                                    <th>Class</th>
+                                    <th>Level</th>
+                                    <th>Vit</th>
+                                    <th>BAB</th>
+                                    <th>Fort</th>
+                                    <th>Ref</th>
+                                    <th>Will</th>
+                                    <th>Def</th>
+                                    <th>Rep</th>
+                                    <th>Skills</th>
+                                </tr>
+                                <tr>
+                                    <td><input type="text" class="sheet-text" name="attr_class1" style="width:70px"/></td>
+                                    <th><input type="text" class="sheet-text" name="attr_class1-level" value="1" style="width:40px"/></th>
+                                    <th><input type="text" class="sheet-text" name="attr_Class1-Vitality" value="0" style="width:40px"/></th>
+                                    <th><input type="text" class="sheet-text" name="attr_Class1-BAB" value="0" style="width:40px"/></th>
+                                    <th><input type="text" class="sheet-text" name="attr_Class1-Fort" value="0" style="width:40px"/></th>
+                                    <th><input type="text" class="sheet-text" name="attr_Class1-Refl" value="0" style="width:40px"/></th>
+                                    <th><input type="text" class="sheet-text" name="attr_Class1-Will" value="0" style="width:40px"/></th>
+                                    <th><input type="text" class="sheet-text" name="attr_Class1-Defense" value="0" style="width:40px"/></th>
+                                    <th><input type="text" class="sheet-text" name="attr_Class1-Rep" value="0" style="width:40px"/></th>
+                                    <th><input type="text" class="sheet-text" name="attr_Class1-Skills" value="0" style="width:40px"/></th>
+                                </tr>
+                                <tr>
+                                    <td><input type="text" class="sheet-text" name="attr_class2" style="width:70px"/></td>
+                                    <th><input type="text" class="sheet-text" name="attr_class2-level" value="0" style="width:40px"/></th>
+                                    <th><input type="text" class="sheet-text" name="attr_Class2-Vitality" value="0" style="width:40px"/></th>
+                                    <th><input type="text" class="sheet-text" name="attr_Class2-BAB" value="0" style="width:40px"/></th>
+                                    <th><input type="text" class="sheet-text" name="attr_Class2-Fort" value="0" style="width:40px"/></th>
+                                    <th><input type="text" class="sheet-text" name="attr_Class2-Refl" value="0" style="width:40px"/></th>
+                                    <th><input type="text" class="sheet-text" name="attr_Class2-Will" value="0" style="width:40px"/></th> 
+                                    <th><input type="text" class="sheet-text" name="attr_Class2-Defense" value="0" style="width:40px"/></th>
+                                    <th><input type="text" class="sheet-text" name="attr_Class2-Rep" value="0" style="width:40px"/></th>
+                                    <th><input type="text" class="sheet-text" name="attr_Class2-Skills" value="0" style="width:40px"/></th>
+                                </tr>
+                                <tr>
+                                    <td><input type="text" class="sheet-text" name="attr_class3" style="width:70px"/></td>
+                                    <th><input type="text" class="sheet-text" name="attr_class3-level" value="0" style="width:40px"/></th>
+                                    <th><input type="text" class="sheet-text" name="attr_Class3-Vitality" value="0" style="width:40px"/></th>
+                                    <th><input type="text" class="sheet-text" name="attr_Class3-BAB" value="0" style="width:40px"/></th>
+                                    <th><input type="text" class="sheet-text" name="attr_Class3-Fort" value="0" style="width:40px"/></th>
+                                    <th><input type="text" class="sheet-text" name="attr_Class3-Refl" value="0" style="width:40px"/></th>
+                                    <th><input type="text" class="sheet-text" name="attr_Class3-Will" value="0" style="width:40px"/></th>
+                                    <th><input type="text" class="sheet-text" name="attr_Class3-Defense" value="0" style="width:40px"/></th>
+                                    <th><input type="text" class="sheet-text" name="attr_Class3-Rep" value="0" style="width:40px"/></th>
+                                    <th><input type="text" class="sheet-text" name="attr_Class3-Skills" value="0" style="width:40px"/></th>
+                                </tr>
+                                <tr>
+                                    <td><input type="text" class="sheet-text" name="attr_Class4" style="width:70px"/></td>
+                                    <th><input type="text" class="sheet-text" name="attr_Class4-level" value="0" style="width:40px"/></th>
+                                    <th><input type="text" class="sheet-text" name="attr_Class4-Vitality" value="0" style="width:40px"/></th>
+                                    <th><input type="text" class="sheet-text" name="attr_Class4-BAB" value="0" style="width:40px"/></th>
+                                    <th><input type="text" class="sheet-text" name="attr_Class4-Fort" value="0" style="width:40px"/></th>
+                                    <th><input type="text" class="sheet-text" name="attr_Class4-Refl" value="0" style="width:40px"/></th>
+                                    <th><input type="text" class="sheet-text" name="attr_Class4-Will" value="0" style="width:40px"/></th>
+                                    <th><input type="text" class="sheet-text" name="attr_Class4-Defense" value="0" style="width:40px"/></th>
+                                    <th><input type="text" class="sheet-text" name="attr_Class4-Rep" value="0" style="width:40px"/></th>
+                                    <th><input type="text" class="sheet-text" name="attr_Class4-Skills" value="0" style="width:40px"/></th>
+                                </tr>
+                                <tr>
+                                    <td><input type="text" class="sheet-text" name="attr_Class5" style="width:70px"/></td>
+                                    <th><input type="text" class="sheet-text" name="attr_Class5-level" value="0" style="width:40px"/></th>
+                                    <th><input type="text" class="sheet-text" name="attr_Class5-Vitality" value="0" style="width:40px"/></th>
+                                    <th><input type="text" class="sheet-text" name="attr_Class5-BAB" value="0" style="width:40px"/></th>
+                                    <th><input type="text" class="sheet-text" name="attr_Class5-Fort" value="0" style="width:40px"/></th>
+                                    <th><input type="text" class="sheet-text" name="attr_Class5-Refl" value="0" style="width:40px"/></th>
+                                    <th><input type="text" class="sheet-text" name="attr_Class5-Will" value="0" style="width:40px"/></th>
+                                    <th><input type="text" class="sheet-text" name="attr_Class5-Defense" value="0" style="width:40px"/></th>
+                                    <th><input type="text" class="sheet-text" name="attr_Class5-Rep" value="0" style="width:40px"/></th>
+                                    <th><input type="text" class="sheet-text" name="attr_Class5-Skills" value="0" style="width:40px"/></th>
+                                </tr>
+                                <tr>
+                                    <td><input type="text" class="sheet-text" name="attr_Class6" style="width:70px"/></td>
+                                    <th><input type="text" class="sheet-text" name="attr_Class6-level" value="0" style="width:40px"/></th>
+                                    <th><input type="text" class="sheet-text" name="attr_Class6-Vitality" value="0" style="width:40px"/></th>
+                                    <th><input type="text" class="sheet-text" name="attr_Class6-BAB" value="0" style="width:40px"/></th>
+                                    <th><input type="text" class="sheet-text" name="attr_Class6-Fort" value="0" style="width:40px"/></th>
+                                    <th><input type="text" class="sheet-text" name="attr_Class6-Refl" value="0" style="width:40px"/></th>
+                                    <th><input type="text" class="sheet-text" name="attr_Class6-Will" value="0" style="width:40px"/></th>
+                                    <th><input type="text" class="sheet-text" name="attr_Class6-Defense" value="0" style="width:40px"/></th>
+                                    <th><input type="text" class="sheet-text" name="attr_Class6-Rep" value="0" style="width:40px"/></th>
+                                    <th><input type="text" class="sheet-text" name="attr_Class6-Skills" value="0" style="width:40px"/></th>
+                                </tr>
+                            </table>
+                        </span>
+                    </div>
+                </td>
+                <!-- Label -->
+                <td style="width:25%;">
+                    <input type="text" name="attr_character_ranks-data" value="@{class1} @{class2} @{class3}" disabled="true">
+                </td>
+                <!-- End Character Classes -->
                 <td>
+                    <span class="corner-label">14. Occupation</span>
+                    <input type="text" name="attr_character_occupation" value="">
+                </td>
+                <td>
+                    <span class="corner-label">15. Community</span>
+                    <input type="text" name="attr_character_community" value="">
                 </td>
             </tr>
         </table>

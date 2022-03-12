@@ -21,10 +21,57 @@
     margin-right:auto;
     z-index: -50;
 }
-
 .charsheet{
     width:840px;
     text-align: center;
+    font-size: 16px;
+}
+.ui-dialog input{
+    letter-spacing: 0.3px;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    padding-top: 8px;
+    padding-bottom: 2px;
+}
+input, textarea, select, .uneditable-input
+{
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border: none;
+}
+/* Base Typography */
+h1, h2, h3, h4, h5, h6
+{
+    padding-left: 1em;
+    padding-right: 1em;
+}
+th, td:not(.empty-cell)
+{
+    border: 1px solid #ccc;
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px
+}
+th
+{
+    text-align:inherit;
+}
+td
+{
+    text-align: inherit;
+    font-weight: normal;
+    color: #333;
+}
+/* Labels */
+.sheet-label
+{
+    text-align: center;
+    font-size: medium;
+    font-weight: bold;
+    color: black;
+    pointer-events: none;
 }
 .corner-label{
     padding-top: 1px;
@@ -35,11 +82,55 @@
     position: absolute;
     pointer-events: none;
 }
-.ui-dialog input{
-    letter-spacing: 0.3px;
-    width: 100%;
+.center-label{
+    padding-top: 1px;
     text-align: center;
-    font-size: 16px;
-    padding-top: 8px;
-    padding-bottom: 2px;
+    font-size: xx-small;
+    color:rgba(0,0,0,0.40);
+    position: absolute;
+    pointer-events: none;
 }
+.data-value{ 
+    font-style: italic;
+    font-size: 95%; 
+    color:rgba(0,0,0,0.40);
+    font-weight: bold;
+}
+
+/* Tooltips */
+div.sheet-tooltipsdown {
+    position: relative;
+    display: inline;
+  }
+  div.sheet-tooltipsdown span {
+    position: absolute;
+    width:500px;
+    color: #000;
+    background: #fff;
+    height: 225px;
+    line-height: 30px;
+    text-align: center;
+    visibility: hidden;
+    border-radius: 6px;
+    border:3px solid black;
+  }
+  div.sheet-tooltipsdown span:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    margin-top: -8px;
+    width: 0; height: 0;
+    border-right: 8px solid #000000;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+  }
+  div:hover.sheet-tooltipsdown span {
+    visibility: visible;
+    opacity: 1;
+    left: 100%;
+    top: 50%;
+    margin-top: -15px;
+    margin-left: 15px;
+    z-index: 999;
+  }
